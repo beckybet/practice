@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Success</title>
+</head>
+<body>
+	You have successfully made it to this page! 
+	<div class="messages">
+		{% if messages %}
+		{% for message in messages %}
+		<li>{{ messages }}</li>
+		{% endfor %}
+
+		{% endif %}
+			{% if emails %}
+			<ul>
+						{% for email in emails%}
+							<li>{{ email.email }}</li>
+						{% endif %}
+						<!-- loop when you don't know how much information you're going to have 
+						you won't know how much information 
+						such as context, we know what the key 
+						what if the key
+						 -->
+
+			</ul>
+	</div>
+</body>
+</html>
